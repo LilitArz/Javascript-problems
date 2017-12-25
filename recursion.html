@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Recursion</title>
+</head>
+<body>
+	<script>
+function power(number,n)
+   {
+     var p=number;
+       if(n==1)
+           return p;
+     else 
+         return p*p;
+     number=p*power(number,n-1);
+    return number;
+   }
+console.log(power(3,2));
+	</script>
+</body>
+</html>
