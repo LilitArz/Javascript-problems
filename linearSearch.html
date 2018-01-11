@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Recursion</title>
+</head>
+<body>
+	<script>
+ /*Minimum Value in an Array*/
+ var Arr=[2,5,1,8,9];
+ function linearSearch(value,index,a)
+ {
+   if(index==a.length)
+   	return -1;
+   else if(a[index]==value)
+   	return index;
+   else
+   	return linearSearch(value,index+1,a);	
+ }
+
+ console.log(linearSearch(8,0,Arr));
+	</script>
+</body>
+</html>
