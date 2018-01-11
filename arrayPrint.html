@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Recursion</title>
+</head>
+<body>
+	<script>
+ function printForward(a,size)
+ {
+     if(size==0)
+         return;
+     else
+     	console.log(a[a.length-size]+" ");
+     printForward(a,size-1);
+     
+ }
+
+    function printBackward(a,size)
+ {
+     if(size==0)
+         return;
+     else
+        console.log(a[size-1]+" ");
+     printBackward(a,size-1);
+     
+ }
+     var Arr=[2,5,4,7];
+ printForward(Arr,Arr.length);
+ printBackward(Arr,Arr.length);
+	</script>
+</body>
+</html>
