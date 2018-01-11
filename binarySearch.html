@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Recursion</title>
+</head>
+<body>
+	<script>
+		var Arr=[2,5,8,9,10,11]
+function binarySearch(arr,i1,i2,num){
+  var mid;
+  if(i1 > i2)
+  {
+    return -1;
+  }
+  mid=Math.floor(i1+(i2-i1)/2);
+  if (num == arr[mid])
+  {
+  	return mid;
+  }
+  else if (num<arr[mid])
+  {
+  	return binarySearch(arr,i1,mid-1,num);
+  }
+  else 
+  {
+  	return binarySearch(arr,mid+1,i2,num);
+  }
+  
+}
+ console.log(binarySearch(Arr,0,4,10));
+	</script>
+</body>
+</html>
