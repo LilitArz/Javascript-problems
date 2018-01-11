@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Recursion</title>
+</head>
+<body>
+	<script>
+ /*Minimum Value in an Array*/
+ var Arr=[2,5,1,8,9];
+ function minValue(a)
+ {
+ 	if(a.length==1)
+ 		return a[0];
+   if(a[0]<a[1])
+   	a[1]=a[0];
+   return minValue(a.slice(1));
+ }
+
+ console.log(minValue(Arr));
+	</script>
+</body>
+</html>
