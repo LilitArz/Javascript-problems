@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Recursion</title>
+</head>
+<body>
+	<script>
+ /*Minimum Value in an Array*/
+ var Arr=[2,5,1,8,9];
+ function testPalindrome(str)
+ {
+ 	if(str.substring(0,1)!=str.substring(str.length-1,str.length))
+ 		return false;
+ 	else if(str.length==2)
+ 		return true;
+ 	else
+ 		return testPalindrome(str.slice(1,str.length-1));
+     testPalindrome(str);
+ }
+
+ console.log(testPalindrome("abba"));
+ console.log(testPalindrome("music"));
+	</script>
+</body>
+</html>
